@@ -20,12 +20,7 @@ def main(number):
         return False
 
     check_status = check_status['src']
-    match check_status:
-        case '/img/light/t_yellow.png':
-            return True
-        case '/img/light/t_grey.png':
-            return False
-        case '/img/light/t_blue.png':
-            return False
-
-    return False
+    if "/img/light/t_yellow.png" == check_status:
+        return True
+    else:
+        return False
